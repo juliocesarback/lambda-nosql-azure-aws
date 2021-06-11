@@ -1,0 +1,32 @@
+Backup
+    - On Demand
+
+Replication
+    Multi-Region
+
+Price
+    Scales with read/write capacity requires design up front to manage appropriately
+
+Data Model
+    Key value with JSON support
+    Up to 400kb record size
+    Limited data type support (only supports one numeric type and does not support dates)
+    Data validation is pushed back into application code
+    Data is eventually consistent by default. Users can configure to be strongly consistent but will increase cost and adds latency, reducing performance
+
+Support
+    Basic support via ticket
+    Community Support Forum
+    No deep database expertise or DBA access
+    “Enterprise support” available for an upcharge ($15K/month)
+
+Querying
+    Key value querying can only use a query to get data about an item if you know what the item is
+    Slow/inefficient scanning performance impact
+
+Index
+    Limited indexing capabilities
+    Indexes sized and provisioned separately from data
+    Hash or hash-range indexes only
+    Some indexes must be defined when table is created
+

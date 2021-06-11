@@ -1,0 +1,52 @@
+Plans
+    On Demand
+
+Configurability
+
+
+Programming Languages
+  - JavaScript
+  - Java
+  - Python
+  - Go
+  - C#
+  - F#
+  - PowerShell
+  - Ruby
+
+Triggers
+    - Reads from 
+    - Amazon DynamoDB
+    - Amazon Kinesis
+    - Amazon MQ
+    - Amazon Managed Streaming for Apache Kafka
+    - self-managed Apache Kafka
+    - Amazon Simple Queue Service
+    - From JSON to JSON
+
+
+Concurrency
+    - It`s possible run multi instances
+
+Price
+    - free
+        1kk request
+        400.000 GB/s
+    - Compute Savings Plans from 1 to 3 years
+        Requests	$0.20 per 1M requests
+        Duration	$0.0000166667 for every GB-second
+
+    - Memory (MB) (with larger memory)	Price per 1ms
+        128	$0.0000000021
+        512	$0.0000000083
+        1024	$0.0000000167
+
+Performance and Scalability
+    - reserves a separate instance for a single execution
+
+Deploy
+    - using github actions
+        Open template: https://github.com/marketplace/actions/aws-lambda-deploy
+        Might have a zip
+    
+

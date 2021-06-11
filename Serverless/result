@@ -1,0 +1,14 @@
+Differents
+    AWS Lambda charges for full provisioned memory capacity, while Azure Functions measures the actual average memory consumption of executions.
+    If Azure Function’s executions share the instance, the memory cost isn’t charged multiple times, but shared between executions, which may lead to noticeable reductions.
+    Both services charge for at least 100 ms and 128MB for each execution. AWS rounds the time up to the nearest 100 ms, while Azure rounds up to 1 ms.
+    CPU profiles are different for Lambda and Functions, which may lead to different durations for comparable workloads.
+
+
+    References
+
+    https://www.simform.com/aws-lambda-vs-azure-functions-vs-google-functions/
+    https://blog.techmagic.co/aws-lambda-vs-google-cloud-functions-vs-azure-functions-what-to-choose-in-2020/
+    https://blog.back4app.com/aws-lambda-vs-azure-functions/
+    https://iamondemand.com/blog/aws-lambda-vs-azure-functions-ten-major-differences/#:~:text=AWS%20Lambda%20defines%20a%20concept,bring%20them%20into%20Function%20Apps.
+    https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/azure-functions/functions-scale.md#:~:text=There%20are%20three%20basic%20hosting,your%20function%20app%20is%20scaled.

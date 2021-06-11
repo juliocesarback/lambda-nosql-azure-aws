@@ -1,0 +1,59 @@
+Backup
+    Automatic taken every four hours behind the scenes
+    Last two backups are stored at all times
+    No point-in-time backups
+    Two backup copies are provided free
+    $0.19 GB/month
+
+Replication
+    - Multi-Region
+
+Price
+    Operations
+        Provisioned Throughput
+            Request Unit per second
+            it`s possible auto-scale
+        Serverless
+            billed for the amount of Request Units
+    Storage
+        Storage is billed on a consumption basis, so you don't have to reserve any storage
+        SSD-backed data and index across all the Azure regions your database is distributed to
+
+    | Autoscale provisioned throughput	                                        | Total RU/s per hour	        | Price per 100 RU/s
+    | Single-region write account	                                            | 100 RU/s x 1.5 x 1 region     | $0.008/hour
+    | Single-region write account with data distributed across multiple regions | 100 RU/s x 1.5 x N regions	| $0.008/hour
+    | Multi-region write account distributed                                    | 100 RU/s x N regions	        | $0.016/hour
+
+    | Standard Provisioned Throughput	                         | Total RU/s per hour	      | Price per 100 RU/s
+    | Single-region write	                                     |  100 RU/s x 1 region	      | $0.008/hour
+    | Single-region write distributed across N regions           | 	100 RU/s x N regions	  | $0.008/hour
+    | Single-region write, with regions using availability zones | 	100 RU/s x 1.25 x N zones | $0.008/hour
+    | Multi-region write with N regions                          | 	100 RU/s x N regions	  | $0.016/hour
+
+    | Serverless	Total Request Units (RU)	Price per 1M RU
+    | Serverless request units (RU)	1,000,000	$0.282
+    | Serverless request units (RU) with availability zone	1,000,000 x 1.25	$0.282
+
+---------------------
+
+    | Consumed Storage	                    | Total GB	| Price
+    | Transactional storage (row-oriented)	| 1 GB	    | $0.25/month
+    | Analytical storage (column-oriented)	| 1 GB	    | $0.02/month
+
+Data Model
+    Document, Graph DBMS, Key-value, and Wide Column store
+    Loses the benefits of specialization when it tries to cover everything
+    All properties are auto-indexed by default
+    Schemaless design
+
+
+Support
+    No real MongoDB support
+    Basic support via ticket
+    Community Support Forum
+    No deep database expertise or DBA access
+    No apparent “Enterprise Support”
+
+
+Index
+    Everything is indexed by default.	
